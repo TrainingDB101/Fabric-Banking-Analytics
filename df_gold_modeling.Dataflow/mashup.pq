@@ -49,7 +49,7 @@ shared dim_card = let
   #"Renamed columns" = Table.RenameColumns(#"Navigation 2", {{"id", "card_key"}, {"client_id", "customer_key"}, {"card_on_dark_web", "dark_web_flag"}}),
   #"Removed columns" = Table.RemoveColumns(#"Renamed columns", {"card_number", "expires", "cvv"}),
   #"Changed column type" = Table.TransformColumnTypes(#"Removed columns", {{"card_key", Int64.Type}, {"customer_key", Int64.Type}, {"credit_limit", Currency.Type}}),
-  #"Renamed columns 1" = Table.RenameColumns(#"Changed column type", {{"card_type", "card_types"}})
+  #"Renamed columns 1" = Table.RenameColumns(#"Changed column type", {{"card_type", "card_types"}, {"card_brand", "card_brands"}})
 in
   #"Renamed columns 1";
 [DataDestinations = {[Definition = [Kind = "Reference", QueryName = "fact_transactions_DataDestination", IsNewTarget = true], Settings = [Kind = "Automatic", TypeSettings = [Kind = "Table"]]]}]
