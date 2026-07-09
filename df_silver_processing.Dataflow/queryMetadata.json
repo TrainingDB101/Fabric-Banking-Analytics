@@ -1,0 +1,62 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {
+    "allowModernEvaluationEngine": true
+  },
+  "name": "df_silver_processing",
+  "queryGroups": [],
+  "documentLocale": "en-US",
+  "queriesMetadata": {
+    "silver_cards": {
+      "queryId": "45ae44b7-d376-49f4-bcaf-f159314f3477",
+      "queryName": "silver_cards",
+      "loadEnabled": false
+    },
+    "silver_transactions": {
+      "queryId": "12640d18-15d4-4b75-8bfc-9de5fba32705",
+      "queryName": "silver_transactions",
+      "loadEnabled": false
+    },
+    "silver_customers": {
+      "queryId": "19f8a51a-a9e8-42ed-a25e-480b4647f6e0",
+      "queryName": "silver_customers",
+      "loadEnabled": false
+    },
+    "silver_customer_cards": {
+      "queryId": "fd9a6bbc-a597-4c21-86e6-187d481b4bd3",
+      "queryName": "silver_customer_cards",
+      "loadEnabled": false
+    },
+    "silver_customers_DataDestination": {
+      "queryId": "56581bb1-aa1b-4fa7-bb62-ac604cc2ea20",
+      "queryName": "silver_customers_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "silver_cards_DataDestination": {
+      "queryId": "466e6e9f-65bd-497b-bf2c-08d2525e7fa9",
+      "queryName": "silver_cards_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "silver_customer_cards_DataDestination": {
+      "queryId": "358306df-a66d-49f5-9c3b-3bda348907af",
+      "queryName": "silver_customer_cards_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "silver_transactions_DataDestination": {
+      "queryId": "9f673a62-6a77-4ee9-9b9a-f713ffb512dd",
+      "queryName": "silver_transactions_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "Lakehouse",
+      "kind": "Lakehouse",
+      "connectionId": "{\"ClusterId\":\"ea754481-8d71-4e31-8fd3-779623fb3fdb\",\"DatasourceId\":\"c60ef552-c950-414d-9a57-442027f1719a\"}"
+    }
+  ]
+}

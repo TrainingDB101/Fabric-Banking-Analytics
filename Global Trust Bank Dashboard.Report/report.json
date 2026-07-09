@@ -1,0 +1,154 @@
+{
+  "config": "{\"version\":\"5.73\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY26SU05\",\"type\":2,\"version\":{\"visual\":\"2.9.0\",\"report\":\"3.3.0\",\"page\":\"2.3.1\"}}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY26SU05",
+            "path": "BaseThemes/CY26SU05.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "items": [
+          {
+            "name": "ChatGPT_Image_Jun_26,_2026,_107433492417527727.png",
+            "path": "ChatGPT_Image_Jun_26,_2026,_107433492417527727.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ae29427c7503e004ce76",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"29ec7d7d4805dd625b5c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":298.88888888888886,\"z\":9000,\"width\":152.22222222222223,\"height\":128.88888888888889,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"dim_card.dark_web_flag\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_card\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"dark_web_flag\"},\"Name\":\"dim_card.dark_web_flag\",\"NativeReferenceName\":\"dark_web_flag\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 128.89,
+          "queryBinary": "H4sIAAAAAAAEAFWRTU/DMAyG/4vPFdrg1iOjIIRAY0PjgKoqpN4INEnlJmxV1f+OnW4au/nzef0xwMJbq1zdQf4xwBrZDka/RqT+TgW1/lItHksgHyAlxNggdcY7yK8zuCdvU/uLsgg51JBBwZjQi2NspRVJ7K1vOT0by4yFGtQhNS18E60TZnFoCbsJy7P4SBpXuD07iT2OGSzJt0gTX9FPtcfPatuoHXDuNMRR9+qyQPLB/AoXCZ3GU/klpmTQrXG1cTuRX5Kxalr8gXxsOTwdjAf55kV4ZPFnZWqUw62wjikuPRLYyJqsdJP9p72zht+zNcpaj043scbCtqFPOgwNFDE7n3vOZcUBdRT2MwYyunsy8pz5yOJ/LO/36tABAAA=",
+          "width": 152.22,
+          "x": 0.00,
+          "y": 298.89,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"2f39e091df6353318c1e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":1000,\"width\":1280,\"height\":88.88888888888889,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Customer and Portfolio Analytics Dashboard\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Arial\",\"fontSize\":\"28pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"padding\":[{\"properties\":{\"top\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"bottom\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 88.89,
+          "width": 1280.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"7742417d5970dba205c1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":88.88888888888889,\"z\":7000,\"width\":152.22222222222223,\"height\":183.33333333333334,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"dim_card.card_brand\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_card\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"card_brand\"},\"Name\":\"dim_card.card_brand\",\"NativeReferenceName\":\"card_brand\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 183.33,
+          "queryBinary": "H4sIAAAAAAAEAE2RTU/DMAyG/4vPFdrg1iOjIIRAY0PjgKoppAaCmg+5Cayq+t+x06L1Fvu1n9d2Bth4a5VrOijfBtgjv6PRzwmpv1FR7b9UwLkEygGyII8DUme8g/KygFvyNrc/KYtQQgMFVIyJvQTGHrUiyb30geXVWBds1KKOuWnj22SdMKtTIOwmLM/iE2nc4cc5yOxxLGBLPiBlvrCP7yTzsfA/wWx6sVBFjOZHiEjoNM61S0DNiGvjGuM+xXVLxqpp3zvyKXB6uhP7f/P8PKnEqzo3yr122KSclx5JHGQ7trkqlrRX9vC//Bplm3un29RgZUPssw9DIyUszldec1l1Qp2E/YiRjO4ejPzJemTzPylNZnnHAQAA",
+          "width": 152.22,
+          "x": 0.00,
+          "y": 88.89,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"964a28c3aeda3404e7de\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":427.77777777777777,\"z\":10000,\"width\":347.77777777777777,\"height\":292.22222222222223,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"image\":[{\"properties\":{\"sourceFile\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'ChatGPT Image Jun 26, 2026, 10_56_32 AM.png'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"ChatGPT_Image_Jun_26,_2026,_107433492417527727.png\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 292.22,
+          "width": 347.78,
+          "x": 0.00,
+          "y": 427.78,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"a1f139c02b12ad7506b3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":152.22222222222223,\"y\":88.88888888888889,\"z\":8000,\"width\":195.55555555555554,\"height\":183.33333333333334,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"dim_card.card_type\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_card\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"card_type\"},\"Name\":\"dim_card.card_type\",\"NativeReferenceName\":\"card_type\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 183.33,
+          "queryBinary": "H4sIAAAAAAAEAE2RTU/DMAyG/4vPFdrg1iOjIIRAY0PjgKopSj0Iaj7kJrCq6n/HTou6W/zafl7bGWDjrVWu6aD8GGCP/I5Gvyak/k5Ftf9SAecSKAfICXkckDrjHZTXBdyTt7n9RVmEEhoooGJM7CUw9qgVifbWB06vxrpgoxZ1zE0b3ybrhFmdA2E3YXkWn0jjDk9LkNnjWMCWfEDKfGEfo5BZ/x9g9rxakpKL5kd4SOg0zqUX7TUDbo1rjPsUyy0Zq6ZlH8inwPJ0JDb/5uF5TIlXdW6UY+2wSVmXHhEOshq73BSXtHf28L/8GmWVR6fb1GBlQ+yzD0MjJSyWE6+5rDqjTsJ+xkhGd09GPmQ9svkf+wxTBMQBAAA=",
+          "width": 195.56,
+          "x": 152.22,
+          "y": 88.89,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"a8bf2f0aa468fecd2f5e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":347.77777777777777,\"y\":470,\"z\":4000,\"width\":447.77777777777777,\"height\":250,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"treemap\",\"projections\":{\"Group\":[{\"queryRef\":\"dim_card.card_type\",\"active\":true}],\"Values\":[{\"queryRef\":\"dim_card.Total Credit Limit\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_card\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"card_type\"},\"Name\":\"dim_card.card_type\",\"NativeReferenceName\":\"card_type\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Total Credit Limit\"},\"Name\":\"dim_card.Total Credit Limit\",\"NativeReferenceName\":\"Total Credit Limit\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 250.00,
+          "queryBinary": "H4sIAAAAAAAEALWSy07DMBBFf6WadYRa2GXZByygUNqqG1RVljOAUR1HExsRRf53ZpyUFqndILGK53V9PLktTJy1qixqyF9aWCGfvdHPAamZKq9W76rCvgXyFlJBDhuk2rgS8usMbsnZNP6oLEIOBWQwYxnfSGDsTiuS3LqpuDyM24wv2qP2aWji9sGWojn7qgjrTpZZXCCNS3w9Bkk7xgwW5CqkpC/aOy/KnD8A9HdeHYtS8+ZT9JCw1Ni3no63MEdVB8I/w6ydV/vBhLAwfvBgrPHnqM50XcI7J8jre6ICadyk/U0N8SoP/+I39n+8J8YtN41NWZjyTcYXZKzqXHFHLlSc7tzEQh8dmsTDbLRNo+KrJRahh25TYiMuYIab7FRv7Sr+RKH6MdwoyitRBxmfoyej63sj9hwJ2jeSA/n30gIAAA==",
+          "width": 447.78,
+          "x": 347.78,
+          "y": 470.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"c68bdcae7914629c22dd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":347.77777777777777,\"y\":88.88888888888889,\"z\":0,\"width\":932.2222222222222,\"height\":135.55555555555554,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"dim_card.Total Cards\"},{\"queryRef\":\"dim_card.Total Credit Limit\"},{\"queryRef\":\"dim_customer.Total Customers\"},{\"queryRef\":\"dim_customer.Average Credit Score\"},{\"queryRef\":\"dim_customer.Average Income\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_customer\",\"Type\":0},{\"Name\":\"d1\",\"Entity\":\"dim_card\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Total Customers\"},\"Name\":\"dim_customer.Total Customers\",\"NativeReferenceName\":\"Total Customers\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"Total Cards\"},\"Name\":\"dim_card.Total Cards\",\"NativeReferenceName\":\"Total Cards\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"Total Credit Limit\"},\"Name\":\"dim_card.Total Credit Limit\",\"NativeReferenceName\":\"Total Credit Limit\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Average Income\"},\"Name\":\"dim_customer.Average Income\",\"NativeReferenceName\":\"Average Income\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Average Credit Score\"},\"Name\":\"dim_customer.Average Credit Score\",\"NativeReferenceName\":\"Average Credit Score\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"Total Cards\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 135.56,
+          "queryBinary": "H4sIAAAAAAAEAK2UUU/CMBDHvwq554Yw9GlvimCMYlCIL4aYpjuxhq7LtSMQsu/udUwZLLgYeeu1v/7765rbFgbWGJkmDuLXLUyRx16rpxxpcyO9nH7IDCsE4i2UC2HwguS0TSHuCxiRNeX2R2kQYkhAwJBj/CYU2ryp3HlrkHh+tskY6RViT0cNXFJSQ+eCvZaofHnGGKXLCYPDcJ0Rup0Gu9ucFD7j+74oXYpCwIRshlQeMLNeLjuDysgBr36L1Ey7x1igvF6FfCRMFVabmnF/V4xOOPJnaPjxXLe+3OJVRZzPiTDRvvOgjfa/qNWpFsPDwP+/79UKSS6wc5cqfpFTz3tEnXJshJ3Pr7r4VFlqtTxg21wPg+ccfa3TRKeL4DUhbeSug2/J5hlP7zqfDT+5xfguoe6JSPTFhbiclwE/zR5xMVyjygM4Rk9auXsdfg1RweQXtrWk6E4EAAA=",
+          "width": 932.22,
+          "x": 347.78,
+          "y": 88.89,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"c98b38cf9813a64e0d0f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":814.4444444444445,\"y\":470,\"z\":5000,\"width\":465.55555555555554,\"height\":250,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Y\":[{\"queryRef\":\"dim_card.Dark Web Exposure Cards\"},{\"queryRef\":\"dim_customer.High Risk Customers\"}],\"Category\":[{\"queryRef\":\"dim_customer.gender\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_customer\",\"Type\":0},{\"Name\":\"d1\",\"Entity\":\"dim_card\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"High Risk Customers\"},\"Name\":\"dim_customer.High Risk Customers\",\"NativeReferenceName\":\"High Risk Customers\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"Dark Web Exposure Cards\"},\"Name\":\"dim_card.Dark Web Exposure Cards\",\"NativeReferenceName\":\"Dark Web Exposure Cards\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"gender\"},\"Name\":\"dim_customer.gender\",\"NativeReferenceName\":\"gender\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"Dark Web Exposure Cards\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 250.00,
+          "queryBinary": "H4sIAAAAAAAEALWTUU/CMBDHv8rS54ZsxKc9MlATgyIYeDDE1O2ECm2X66ouy7671zEEhT1o4tu1+9//frveVSwxSgmdWRY/VmwGFBcyvXeA5VAUYrYWObQSFles+eCDOaCVRrO4z9klGtWk3woFLGYZ42xENkXpD1I9pc4WRgHS/UOZkySs+UEdncgFZkfSJSeuLaRFU2MMwjoEzzD6yBHsDoPYjcMUpvByODQsdc3ZBE0O2BS4lqt1MJV2EyQtlWWk2MMc0fbOSb2ykG++DiDoFNrE87a/x41+8g4FboIFPAeUbrxVkFB7Tpjprtcl7WLutq5oLLZO6T93eQU6o/fuaGz7tYtrn0wPf4cUDcrm5YcSaQj2Q/cd6//aXNdLUg6kzqReeZMJSiV2S3CFxuV0vVsecnvdAfpzyCPeXzbJfpGmkLkWvmou5r7BxHLBjx0XVMe8+ygxTtPER2EY1p71a+Gi2v88pM67jaFAmdob6dcz8qyfe5qQ2dIDAAA=",
+          "width": 465.56,
+          "x": 814.44,
+          "y": 470.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"cebf132fce6120da1caa\",\"layouts\":[{\"id\":0,\"position\":{\"x\":814.4444444444445,\"y\":217.77777777777777,\"z\":2000,\"width\":465.55555555555554,\"height\":252.22222222222223,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dim_customer.gender\",\"active\":true}],\"Y\":[{\"queryRef\":\"dim_customer.Total Customers\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_customer\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"gender\"},\"Name\":\"dim_customer.gender\",\"NativeReferenceName\":\"gender\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Total Customers\"},\"Name\":\"dim_customer.Total Customers\",\"NativeReferenceName\":\"Total Customers\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Total Customers\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 252.22,
+          "queryBinary": "H4sIAAAAAAAEAK2STU/DMAyG/wrKuUIt4tTjusEBDcY2jQOaUJSaEdQklZsAVdX/jp12Y4B2Qdz8+fqJ404Uzhhpy0bkj51YAdleq/sA2E6ll6sXWcNYIvJOxAQbG8BGOyvyi0RcoTOx/VYaELkoRSJmJONbdrR5UqHxzgBSfN3WVJL224SGVaB8bCxcFYxl3dlHjdAM0sTjAipYwvOXE/X7PhELdDVgnLEDW5I6BfcER0PPxywnvX5jNUCwCsbaQ3Mn5iCbgPBnjrXzsjorxsHNKaCfZafIfsnR0u6QYCdt3NpUIy1w/wvfif/9KX2/pYqJtqW2O+5doDZyOIZrdKGm8HBEpPI6cLGfJtk2tvI5LaEMI3EXAxv+eAK4TI71HmiKe2ercMHSiWRpmvZMeDi7rOcXgwqsNgePWjU3mo80Y9JPeTpos9gCAAA=",
+          "width": 465.56,
+          "x": 814.44,
+          "y": 217.78,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"d20bb18d3f626c2a70a4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":347.77777777777777,\"y\":217.77777777777777,\"z\":3000,\"width\":447.77777777777777,\"height\":252.22222222222223,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dim_card.card_brand\",\"active\":true}],\"Y\":[{\"queryRef\":\"dim_card.Total Cards\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_card\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"card_brand\"},\"Name\":\"dim_card.card_brand\",\"NativeReferenceName\":\"card_brand\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Total Cards\"},\"Name\":\"dim_card.Total Cards\",\"NativeReferenceName\":\"Total Cards\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Total Cards\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 252.22,
+          "queryBinary": "H4sIAAAAAAAEAK2STU/DMAyG/wryuUIb3HrcBxzQYGzTLmiaQmogqGkqN0FUVf47dtrBJrEL4tTYb/z4reMOps5aVRUN5E8drJHP3ujHgNTOlFfrN1XjcAXyDpIghy1SY1wF+VUGN+RsKr9XFiGHAjKYM8a3Ehi714okt2lrlkdxl3GjErVPRVNXBlsJc/5ZEzY9lr24QBpX+PITJHaMGSzJ1UiJL+z9M4k/Fg4OhqaXR6qI3nwIEQkrjcPdE0AHC1RNIPyzn43zqryYMrT5zdCxfM7RCYKH9UAF0qRN05oZ4sEdJn/q8F+tx7hjdWKqwlSvUrckY1X/+LfkQs3pfmmY8N57kniUjXepVNZnhUUY3HYpsZXH5ubX2TFv42r+RLHzvVfjKL+HOkj5Aj0Z3dwZ2cKxWPsCwJT9bLkCAAA=",
+          "width": 447.78,
+          "x": 347.78,
+          "y": 217.78,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"d707e70ea2403172e7b8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":152.22222222222223,\"y\":298.88888888888886,\"z\":6000,\"width\":195.55555555555554,\"height\":128.88888888888889,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"dim_customer.gender\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_customer\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"gender\"},\"Name\":\"dim_customer.gender\",\"NativeReferenceName\":\"gender\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 128.89,
+          "queryBinary": "H4sIAAAAAAAEAE1Ry07DQAz8F59XqIVbjpSAEAKVFpUDitBqY8qi7EPOLjSK8u/Y21TtzR57ZvwYYRWc077tofoYYYscJ2teM9Jwp5PefuuIcwtUI5SCBDuk3gYP1bWCewqu0F+0Q6igBQU1y6RBEus+Te5TcEiMvw2RWxZTo9isQ5MKcRW67Lzo1odI2B+leZ6QyeAGv85J0Z8mBWsKEal47NG3rM7gaYIL06u5KsVkf0UNCb3BufdEbph+a31r/V7c1mSdPu76QCFHho83Yt8fnpsnlHzRFKLcaoNtLrhwBNjJVmxxoy7V3tkj/HE0yRaP3nS5xdrFNBQfFk2UUZ0vvOS2+oAmi/YzJrKmf7Lyj+XE5v+vpphdwwEAAA==",
+          "width": 195.56,
+          "x": 152.22,
+          "y": 298.89,
+          "z": 6000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

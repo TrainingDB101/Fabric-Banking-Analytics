@@ -1,0 +1,137 @@
+table dim_card
+	lineageTag: e2821f60-f8d1-40c0-85b0-1196f0d9f0d4
+	sourceLineageTag: ace3d644-a21a-49d2-9ebd-37ea1ab9b934
+
+	measure 'Total Cards' = EXTERNALMEASURE("Total Cards", INTEGER, "DirectQuery to AS - sm_gold_analytics")
+		formatString: 0
+		lineageTag: daab616e-17a2-4690-a079-2058aeb60ace
+		sourceLineageTag: 6ed199a2-7ea3-409b-8eda-9f50e12220b7
+		dataCategory: Uncategorized
+
+	measure 'Total Credit Limit' = EXTERNALMEASURE("Total Credit Limit", DOUBLE, "DirectQuery to AS - sm_gold_analytics")
+		lineageTag: 35941b9a-a7e8-44b8-a7e2-3a62b2fd0a21
+		sourceLineageTag: 01a4fe52-6ccc-424c-9204-5bcd02460e0a
+		dataCategory: Uncategorized
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Dark Web Exposure Cards' = EXTERNALMEASURE("Dark Web Exposure Cards", INTEGER, "DirectQuery to AS - sm_gold_analytics")
+		formatString: 0
+		lineageTag: 6c57a1c1-7b6e-4e93-ab3f-3a252d95fb70
+		sourceLineageTag: 16a76bd2-f28b-4981-9636-4577cb9f2477
+		dataCategory: Uncategorized
+
+	column card_key
+		dataType: int64
+		isNullable: false
+		formatString: 0
+		lineageTag: 32e27129-32bc-4931-bd26-8711ba214364
+		sourceLineageTag: eec72407-bec6-4a3f-aeb2-661b37ed7cdf
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: card_key
+
+		annotation SummarizationSetBy = User
+
+	column customer_key
+		dataType: int64
+		formatString: 0
+		lineageTag: a6e705f7-76cd-4e3d-ad37-4f9004d653e0
+		sourceLineageTag: f6d616b1-3f81-42f7-bd77-25f3e1c38416
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: customer_key
+
+		annotation SummarizationSetBy = User
+
+	column card_brand
+		dataType: string
+		lineageTag: b7842c6b-35a2-48db-b1f3-6dfd09a8e20e
+		sourceLineageTag: 59d803f4-0e87-499c-bffa-38f4dfbb1e8a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: card_brand
+
+		annotation SummarizationSetBy = User
+
+	column card_type
+		dataType: string
+		lineageTag: 299d286c-81f1-4ffd-b369-14f1baff55e6
+		sourceLineageTag: 839a61cd-dd37-4ba7-a944-2c15f592b4dd
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: card_type
+
+		annotation SummarizationSetBy = User
+
+	column has_chip
+		dataType: string
+		lineageTag: 804b405e-425a-4f97-8538-8070658c8b99
+		sourceLineageTag: bd11459d-7260-491f-8b75-0eff7502b77d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: has_chip
+
+		annotation SummarizationSetBy = User
+
+	column num_cards_issued
+		dataType: int64
+		formatString: 0
+		lineageTag: 9d052f0f-2b86-4edc-92f4-a7396965668d
+		sourceLineageTag: 8347a1ac-789f-440b-96fb-5123559102a2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: num_cards_issued
+
+		annotation SummarizationSetBy = User
+
+	column credit_limit
+		dataType: double
+		lineageTag: 023da539-c029-430c-976e-03f25da8ead5
+		sourceLineageTag: 7bf790e8-b97b-45ef-88c4-435430649d15
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: credit_limit
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column acct_open_date
+		dataType: dateTime
+		formatString: General Number
+		lineageTag: fce22409-cecd-4df1-9602-0cfae80e4468
+		sourceLineageTag: b0781237-0e83-400d-b75b-41489cb73b2c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: acct_open_date
+
+		annotation SummarizationSetBy = User
+
+	column year_pin_last_changed
+		dataType: dateTime
+		formatString: General Number
+		lineageTag: aae6b7ec-e7a0-49aa-8909-5048c464bb5a
+		sourceLineageTag: 8ec1cc7b-73b8-4d80-b768-5c95d65fc649
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: year_pin_last_changed
+
+		annotation SummarizationSetBy = User
+
+	column dark_web_flag
+		dataType: string
+		lineageTag: ce67a4a5-8a09-4ce8-83c3-ba34bd2a990c
+		sourceLineageTag: e8ffc009-f1d3-4e0d-b4f3-d2c204f2326b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: dark_web_flag
+
+		annotation SummarizationSetBy = User
+
+	partition dim_card = entity
+		mode: directQuery
+		source
+			entityName: dim_card
+			expressionSource: 'DirectQuery to AS - sm_gold_analytics'
+

@@ -1,0 +1,136 @@
+table dim_card
+	lineageTag: ace3d644-a21a-49d2-9ebd-37ea1ab9b934
+	sourceLineageTag: [dbo].[dim_card]
+
+	measure 'Total Cards' =
+			
+			COUNTROWS(dim_card)
+		formatString: 0
+		lineageTag: 6ed199a2-7ea3-409b-8eda-9f50e12220b7
+
+		changedProperty = Name
+
+	measure 'Total Credit Limit' =
+			
+			SUM(dim_card[credit_limit])
+		lineageTag: 01a4fe52-6ccc-424c-9204-5bcd02460e0a
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Dark Web Exposure Cards' =
+			
+			CALCULATE(
+			    COUNTROWS(dim_card),
+			    dim_card[dark_web_flag] = "Yes"
+			)
+		formatString: 0
+		lineageTag: 16a76bd2-f28b-4981-9636-4577cb9f2477
+
+		changedProperty = Name
+
+	column card_key
+		dataType: int64
+		formatString: 0
+		lineageTag: eec72407-bec6-4a3f-aeb2-661b37ed7cdf
+		sourceLineageTag: card_key
+		summarizeBy: none
+		sourceColumn: card_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column customer_key
+		dataType: int64
+		formatString: 0
+		lineageTag: f6d616b1-3f81-42f7-bd77-25f3e1c38416
+		sourceLineageTag: customer_key
+		summarizeBy: none
+		sourceColumn: customer_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column card_brand
+		dataType: string
+		lineageTag: 59d803f4-0e87-499c-bffa-38f4dfbb1e8a
+		sourceLineageTag: card_brand
+		summarizeBy: none
+		sourceColumn: card_brand
+
+		annotation SummarizationSetBy = Automatic
+
+	column card_type
+		dataType: string
+		lineageTag: 839a61cd-dd37-4ba7-a944-2c15f592b4dd
+		sourceLineageTag: card_type
+		summarizeBy: none
+		sourceColumn: card_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column has_chip
+		dataType: string
+		lineageTag: bd11459d-7260-491f-8b75-0eff7502b77d
+		sourceLineageTag: has_chip
+		summarizeBy: none
+		sourceColumn: has_chip
+
+		annotation SummarizationSetBy = Automatic
+
+	column num_cards_issued
+		dataType: int64
+		formatString: 0
+		lineageTag: 8347a1ac-789f-440b-96fb-5123559102a2
+		sourceLineageTag: num_cards_issued
+		summarizeBy: none
+		sourceColumn: num_cards_issued
+
+		annotation SummarizationSetBy = Automatic
+
+	column credit_limit
+		dataType: double
+		lineageTag: 7bf790e8-b97b-45ef-88c4-435430649d15
+		sourceLineageTag: credit_limit
+		summarizeBy: none
+		sourceColumn: credit_limit
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column acct_open_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: b0781237-0e83-400d-b75b-41489cb73b2c
+		sourceLineageTag: acct_open_date
+		summarizeBy: none
+		sourceColumn: acct_open_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column year_pin_last_changed
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 8ec1cc7b-73b8-4d80-b768-5c95d65fc649
+		sourceLineageTag: year_pin_last_changed
+		summarizeBy: none
+		sourceColumn: year_pin_last_changed
+
+		annotation SummarizationSetBy = Automatic
+
+	column dark_web_flag
+		dataType: string
+		lineageTag: e8ffc009-f1d3-4e0d-b4f3-d2c204f2326b
+		sourceLineageTag: dark_web_flag
+		summarizeBy: none
+		sourceColumn: dark_web_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_card = entity
+		mode: directLake
+		source
+			entityName: dim_card
+			schemaName: dbo
+			expressionSource: 'DirectLake - fabric_banking_medallion_lakehouse'
+

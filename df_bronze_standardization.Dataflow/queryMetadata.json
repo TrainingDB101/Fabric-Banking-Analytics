@@ -1,0 +1,51 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {
+    "allowModernEvaluationEngine": true
+  },
+  "name": "df_bronze_standardization",
+  "queryGroups": [],
+  "documentLocale": "en-US",
+  "queriesMetadata": {
+    "bronze_cards": {
+      "queryId": "e1f2ec3a-6488-48e9-90f0-6c12cae46b61",
+      "queryName": "bronze_cards",
+      "loadEnabled": false
+    },
+    "bronze_transactions": {
+      "queryId": "70cef311-50a9-4952-9759-c31c31121aac",
+      "queryName": "bronze_transactions",
+      "loadEnabled": false
+    },
+    "bronze_users": {
+      "queryId": "9482df2b-fc39-4c3a-8a07-a23ea7d1d4ec",
+      "queryName": "bronze_users",
+      "loadEnabled": false
+    },
+    "bronze_users_DataDestination": {
+      "queryId": "596646cc-1905-4d92-8b26-1f11af0227fd",
+      "queryName": "bronze_users_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "bronze_transactions_DataDestination": {
+      "queryId": "98fecf27-da54-4600-8368-3d48026c1429",
+      "queryName": "bronze_transactions_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "bronze_cards_DataDestination": {
+      "queryId": "bdbcaedb-1e11-4e04-8076-523124517f3b",
+      "queryName": "bronze_cards_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "Lakehouse",
+      "kind": "Lakehouse",
+      "connectionId": "{\"ClusterId\":\"ea754481-8d71-4e31-8fd3-779623fb3fdb\",\"DatasourceId\":\"c60ef552-c950-414d-9a57-442027f1719a\"}"
+    }
+  ]
+}

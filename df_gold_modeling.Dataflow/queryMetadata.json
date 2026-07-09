@@ -1,0 +1,67 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {
+    "allowModernEvaluationEngine": true
+  },
+  "name": "df_gold_modeling",
+  "queryGroups": [],
+  "documentLocale": "en-US",
+  "queriesMetadata": {
+    "silver_cards": {
+      "queryId": "b512e65b-4d62-47e8-93cf-d62a8f8c4130",
+      "queryName": "silver_cards"
+    },
+    "silver_customer_cards": {
+      "queryId": "81917106-4f4e-4e24-a58d-3071307b7f4e",
+      "queryName": "silver_customer_cards"
+    },
+    "silver_customers": {
+      "queryId": "7d64cdfb-1c6d-4d85-a17e-6697fe07385a",
+      "queryName": "silver_customers"
+    },
+    "silver_transactions": {
+      "queryId": "3a55b14d-a02f-4608-8c68-56e51da1a490",
+      "queryName": "silver_transactions"
+    },
+    "dim_customer": {
+      "queryId": "47458f15-8f55-4b7d-a713-27867f68e36e",
+      "queryName": "dim_customer",
+      "loadEnabled": false
+    },
+    "dim_card": {
+      "queryId": "6932b2bf-52a4-413b-a3b9-19a7fc554cf3",
+      "queryName": "dim_card",
+      "loadEnabled": false
+    },
+    "fact_transactions": {
+      "queryId": "5b0e98e8-eff1-4f38-8398-79d3a20cc4f0",
+      "queryName": "fact_transactions",
+      "loadEnabled": false
+    },
+    "dim_customer_DataDestination": {
+      "queryId": "774514f5-05bc-476a-95ab-0b1bf4359505",
+      "queryName": "dim_customer_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "dim_card_DataDestination": {
+      "queryId": "6279d29d-ed05-4fd2-946b-d6b56e63fbbd",
+      "queryName": "dim_card_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "fact_transactions_DataDestination": {
+      "queryId": "15ee7f22-1192-47e7-a61a-b4605a029811",
+      "queryName": "fact_transactions_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "Lakehouse",
+      "kind": "Lakehouse",
+      "connectionId": "{\"ClusterId\":\"ea754481-8d71-4e31-8fd3-779623fb3fdb\",\"DatasourceId\":\"c60ef552-c950-414d-9a57-442027f1719a\"}"
+    }
+  ]
+}
