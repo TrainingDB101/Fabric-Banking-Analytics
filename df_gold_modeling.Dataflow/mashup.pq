@@ -36,9 +36,10 @@ shared dim_customer = let
   #"Navigation 2" = #"Navigation 1"{[Id = "silver_customers", ItemKind = "Table"]}[Data],
   #"Renamed columns" = Table.RenameColumns(#"Navigation 2", {{"id", "customer_key"}, {"yearly_income", "Income"}, {"total_debt", "debt"}, {"num_credit_cards", "number_of_cards"}}),
   #"Changed column type" = Table.TransformColumnTypes(#"Renamed columns", {{"customer_key", Int64.Type}, {"retirement_age", Int64.Type}, {"birth_month", Int64.Type}, {"birth_year", Int64.Type}, {"number_of_cards", Int64.Type}, {"credit_score", Int64.Type}, {"debt", Currency.Type}, {"Income", Currency.Type}, {"per_capita_income", Currency.Type}}),
-  #"Removed columns" = Table.RemoveColumns(#"Changed column type", {"address", "latitude", "longitude"})
+  #"Removed columns" = Table.RemoveColumns(#"Changed column type", {"address", "latitude", "longitude"}),
+  #"Renamed columns 1" = Table.RenameColumns(#"Removed columns", {{"current_age", "current_ages"}})
 in
-  #"Removed columns";
+  #"Renamed columns 1";
 [DataDestinations = {[Definition = [Kind = "Reference", QueryName = "dim_card_DataDestination", IsNewTarget = true], Settings = [Kind = "Automatic", TypeSettings = [Kind = "Table"]]]}]
 shared dim_card = let
   Source = Lakehouse.Contents(null),
