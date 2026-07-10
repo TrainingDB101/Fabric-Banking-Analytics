@@ -1,0 +1,108 @@
+table dim_card
+	lineageTag: e48b63f5-44e4-443a-ad73-574ab3b30569
+	sourceLineageTag: [dbo].[dim_card]
+
+	column card_key
+		dataType: int64
+		formatString: 0
+		lineageTag: cbcc447c-d687-4945-af98-41a45fa4047f
+		sourceLineageTag: card_key
+		summarizeBy: none
+		sourceColumn: card_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column customer_key
+		dataType: int64
+		formatString: 0
+		lineageTag: a888e575-cea2-4771-9768-901132636a1d
+		sourceLineageTag: customer_key
+		summarizeBy: none
+		sourceColumn: customer_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column card_brand
+		dataType: string
+		lineageTag: 30db310c-bd2f-4bcc-96c0-0ba1b2130835
+		sourceLineageTag: card_brand
+		summarizeBy: none
+		sourceColumn: card_brand
+
+		annotation SummarizationSetBy = Automatic
+
+	column card_type
+		dataType: string
+		lineageTag: 4bdbc3c0-7bf4-4956-8d47-5b0a5a4594a0
+		sourceLineageTag: card_type
+		summarizeBy: none
+		sourceColumn: card_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column has_chip
+		dataType: string
+		lineageTag: 3e3ba698-194b-4a83-9d16-65785e1f1bb4
+		sourceLineageTag: has_chip
+		summarizeBy: none
+		sourceColumn: has_chip
+
+		annotation SummarizationSetBy = Automatic
+
+	column num_cards_issued
+		dataType: int64
+		formatString: 0
+		lineageTag: a6d6e4d3-2bcf-41c3-aded-3efa8dc9937b
+		sourceLineageTag: num_cards_issued
+		summarizeBy: none
+		sourceColumn: num_cards_issued
+
+		annotation SummarizationSetBy = Automatic
+
+	column credit_limit
+		dataType: double
+		lineageTag: 705c4c87-9b60-496b-8a30-196a8ad248a0
+		sourceLineageTag: credit_limit
+		summarizeBy: none
+		sourceColumn: credit_limit
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column acct_open_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 52c747dd-26ff-49e8-a38d-5563c75ad501
+		sourceLineageTag: acct_open_date
+		summarizeBy: none
+		sourceColumn: acct_open_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column year_pin_last_changed
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: a2996e48-2972-4311-81fa-04bec21ab383
+		sourceLineageTag: year_pin_last_changed
+		summarizeBy: none
+		sourceColumn: year_pin_last_changed
+
+		annotation SummarizationSetBy = Automatic
+
+	column dark_web_flag
+		dataType: string
+		lineageTag: 8e53f31b-5847-4826-9425-070752fb012d
+		sourceLineageTag: dark_web_flag
+		summarizeBy: none
+		sourceColumn: dark_web_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_card = entity
+		mode: directLake
+		source
+			entityName: dim_card
+			schemaName: dbo
+			expressionSource: 'DirectLake - fabric_banking_medallion_lakehouse'
+
