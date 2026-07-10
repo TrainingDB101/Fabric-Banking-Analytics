@@ -1,2 +1,2 @@
-# fabric-banking-analytics
+# Fabric-banking-analytics
 Microsoft Fabric Banking Analytics Project 
