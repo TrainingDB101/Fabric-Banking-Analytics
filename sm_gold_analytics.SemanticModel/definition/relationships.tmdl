@@ -1,8 +1,0 @@
-relationship 4a08ba61-d638-f251-4221-19fc0ef47187
-	fromColumn: fact_transactions.customer_key
-	toColumn: dim_customer.customer_key
-
-relationship c8d0cdf3-e35f-7e69-3d27-b6630106f3a3
-	fromColumn: fact_transactions.card_key
-	toColumn: dim_card.card_key
-
