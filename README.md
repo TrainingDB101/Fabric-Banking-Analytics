@@ -32,9 +32,11 @@ The project demonstrates how to:
 
 ---
 
-# Solution Architecture
+<h1 align="center">Solution Architecture</h1>
 
-```text
+<div align="center">
+
+<pre>
 Source Banking Data
         │
         ▼
@@ -57,11 +59,14 @@ Interactive Dashboard
         │
  ┌──────┴──────────────┐
  ▼                     ▼
-Governance & Security  Deployment Pipeline
-        │                     │
-        └──────────┬──────────┘
-                   ▼
-          Git Version Control
+Governance & Security      Deployment Pipeline
+│                     │
+└──────────┬──────────┘
+           ▼
+   Git Version Control
+</pre>
+
+</div>
 ```
 
 ---
